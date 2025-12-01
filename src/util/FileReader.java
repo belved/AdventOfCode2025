@@ -6,26 +6,22 @@ import java.util.*;
 
 public class FileReader {
 
-    public static List<List<Character>> readDataAsCharMatrix(String fileName) {
+    public static List<String> readDataAsListString(String fileName) {
 
-        List<List<Character>> matrix = new ArrayList<>();
+        List<String> data = new ArrayList<>();
 
         try {
             File myObj = new File("src/data/"+fileName+".txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 String line = myReader.nextLine();
-                List<Character> temp = new ArrayList<>();
-                for (int i = 0; i < line.length(); i++) {
-                    temp.add(line.charAt(i));
-                }
-                matrix.add(temp);
+                data.add(line);
             }
             myReader.close();
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-        return matrix;
+        return data;
     }
 }
