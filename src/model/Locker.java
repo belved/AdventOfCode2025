@@ -18,9 +18,21 @@ public class Locker {
     }
 
     public int unlock(boolean shouldCountWhenPassing) {
+        boolean isPositive = true;
+        boolean wasZero = false;
+        boolean temp;
         for(Combination c : combinationList) {
             currentValue += c.rotate();
+
+            temp = currentValue > 0;
+            if(shouldCountWhenPassing) {
+                if(isPositive != temp && currentValue != 0 && !wasZero) numberOfZero++;
+                if(Math.abs(currentValue) > maxValue) numberOfZero += Math.abs(currentValue)/100;
+            }
             if((maxValue + currentValue)%100 == 0) numberOfZero++;
+
+            wasZero = currentValue == 0;
+            isPositive = temp;
         }
 
         return (maxValue + currentValue)%100;

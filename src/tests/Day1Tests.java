@@ -183,4 +183,31 @@ class Day1Tests {
 
         Assertions.assertEquals(3, locker.getNumberOfZero());
     }
+
+    @Test
+    void testUnlockWithValueR1000WhenCountingPass() {
+        Locker locker = new Locker(List.of("R1000"));
+
+        locker.unlock(true);
+
+        Assertions.assertEquals(10, locker.getNumberOfZero());
+    }
+
+    @Test
+    void testUnlockWithValueAround0FromNegative() {
+        Locker locker = new Locker(List.of("R50", "L1", "R1", "L1", "R1"));
+
+        locker.unlock(true);
+
+        Assertions.assertEquals(3, locker.getNumberOfZero());
+    }
+
+    @Test
+    void testUnlockWithValueAround0FromPositive() {
+        Locker locker = new Locker(List.of("L50", "R1", "L1", "R1", "L1"));
+
+        locker.unlock(true);
+
+        Assertions.assertEquals(3, locker.getNumberOfZero());
+    }
 }
