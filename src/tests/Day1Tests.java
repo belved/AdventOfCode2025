@@ -1,7 +1,7 @@
 package tests;
 
-import model.Combination;
-import model.Locker;
+import model.Day1.Combination;
+import model.Day1.Locker;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

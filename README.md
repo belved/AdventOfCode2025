@@ -44,6 +44,9 @@ src/
 │   └── IDay.java
 ├── data/         # Contains every puzzle input.
 ├── model/        # Contains the objects created for the solutions
+│   ├── Day1/
+│   ├── Day2/
+│   └── ...       
 ├── tests/        # Every Unit Tests
 ├── util/         # Some static class for redundant functions
 └── Main.java     # Start solution for every days

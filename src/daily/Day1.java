@@ -1,6 +1,6 @@
 package daily;
 
-import model.Locker;
+import model.Day1.Locker;
 import util.FileReader;
 
 import java.util.List;
