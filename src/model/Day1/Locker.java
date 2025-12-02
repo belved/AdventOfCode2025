@@ -1,4 +1,4 @@
-package model;
+package model.Day1;
 
 import java.util.ArrayList;
 import java.util.List;
