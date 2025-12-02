@@ -1,7 +1,7 @@
 # Advent of Code 2025
 ![AOC](https://img.shields.io/badge/Advent%20of%20Code-2025-darkgreen)
 
-![Progress](https://img.shields.io/badge/progress-2%2F24%20stars-lightgrey)
+![Progress](https://img.shields.io/badge/progress-4%2F24%20stars-lightgrey)
 
 ![Language](https://img.shields.io/badge/language-Java-red)
 
@@ -74,7 +74,7 @@ It is not possible to run a specific day, but if you need, you can run a specifi
 
 ## 📊 Progression
 
-![Progress](https://img.shields.io/badge/Progress-2%2F24-yellow?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-4%2F24-yellow?style=for-the-badge)
 
 Here is the progress for the Advent of Code 2025 !   
 You can find the progress of the challenge and some other information.
@@ -98,9 +98,9 @@ It will be updated along the event.
 ### 🗓️ Daily table
 
 | Day | Part 1 | Part 2 | Time (ms) | Comment |
-|------|---------|-----------|--------|------------|-------------|
-| 01 | ✔️ | ✔️ | 36 ms | First part was dead simple, second one too, but it blows my mind for many hours to find the solution |
-| 02 | ❌ | ❌ | — | |
+|------|---------|-----------|------------|-------------|
+| 01 | ✔️ | ✔️ | 36 ms | The first part was dead simple, the second one too, but it blew my mind for many hours to find the solution. |
+| 02 | ✔️ | ✔️ | 406 ms | The logic of the second part was the first one I had in mind when reading the first part, so it wasn't really difficult to find a solution for this one. I think part two could be much faster using some optimizations.|
 | 03 | ❌ | ❌ | — | |
 | 04 | ❌ | ❌ | — | |
 | 05 | ❌ | ❌ | — | |
