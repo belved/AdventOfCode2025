@@ -6,7 +6,8 @@ import java.util.Arrays;
 public class Main {
     public static final ArrayList<IDay> daysList = new ArrayList<>(
             Arrays.asList(
-                    new Day1()
+                    new Day1(),
+                    new Day2()
             )
     );
 

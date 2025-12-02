@@ -24,4 +24,22 @@ public class FileReader {
         }
         return data;
     }
+
+    public static String readDataAsString(String fileName) {
+
+        String line = "";
+
+        try {
+            File myObj = new File("src/data/"+fileName+".txt");
+            Scanner myReader = new Scanner(myObj);
+            while (myReader.hasNextLine()) {
+                line = myReader.nextLine();
+            }
+            myReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+        return line;
+    }
 }
