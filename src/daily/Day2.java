@@ -12,5 +12,7 @@ public class Day2 implements IDay{
         Range range = new Range(value);
 
         System.out.println("The value of all the incorrect id is : " + range.getSumOfInvalidIdFromHalf());
+
+        System.out.println("The value of all the incorrect id from everywhere is : "+range.getSumOfInvalidIdFromEverywhere());
     }
 }

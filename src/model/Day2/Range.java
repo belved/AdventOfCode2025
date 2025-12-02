@@ -7,7 +7,6 @@ import java.util.regex.Pattern;
 
 public class Range {
     private final List<Id> idRange = new ArrayList<>();
-    private final List<Id> invalidId = new ArrayList<>();
 
     private final Pattern pattern = Pattern.compile("(\\d+)-(\\d+)");
 
@@ -36,7 +35,16 @@ public class Range {
         long sum = 0;
         for(Id id : idRange) {
             if(!id.isValidFromHalf()) {
-                invalidId.add(id);
+                sum += Long.parseLong(id.getValue());
+            }
+        }
+        return sum;
+    }
+
+    public long getSumOfInvalidIdFromEverywhere() {
+        long sum = 0;
+        for(Id id : idRange) {
+            if(!id.isValidFromEverywhere()) {
                 sum += Long.parseLong(id.getValue());
             }
         }
