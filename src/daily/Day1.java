@@ -14,12 +14,12 @@ public class Day1 implements IDay{
 
         Locker locker = new Locker(data);
 
-        locker.unlock(false);
+        locker.unlock();
 
         System.out.println("The combination of the locker stop "+ locker.getNumberOfZero()+" time on the 0");
 
         locker = new Locker(data);
-        locker.unlock(true);
+        locker.countWhenPassingZero();
 
         System.out.println("The combination of the locker pass "+ locker.getNumberOfZero()+" time on the 0");
 

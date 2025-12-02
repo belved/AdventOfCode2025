@@ -1,7 +1,7 @@
 # Advent of Code 2025
 ![AOC](https://img.shields.io/badge/Advent%20of%20Code-2025-darkgreen)
 
-![Progress](https://img.shields.io/badge/progress-0%2F24%20stars-lightgrey)
+![Progress](https://img.shields.io/badge/progress-2%2F24%20stars-lightgrey)
 
 ![Language](https://img.shields.io/badge/language-Java-red)
 
@@ -26,12 +26,12 @@ You can find more information in the [about](https://adventofcode.com/2025/about
 - **Language :** Java 21  
 - **IDE :** IntelliJ IDEA Community Edition  
 - **Unit Test :** JUnit  
-- **Dependency managment :** Nothing. No Gradle no Maven.
+- **Dependency management :** Nothing. No Gradle no Maven.
 
 > Each solution can be run directly in the IDE using the main class.  
 > The unit tests are only there to check the solution works as expected
 
-## 🗂️ Architecture du projet
+## 🗂️ Project architecture
 
 My code is organized like this : 
 
@@ -71,7 +71,7 @@ It is not possible to run a specific day, but if you need, you can run a specifi
 
 ## 📊 Progression
 
-![Progress](https://img.shields.io/badge/Progress-0%2F24-yellow?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-2%2F24-yellow?style=for-the-badge)
 
 Here is the progress for the Advent of Code 2025 !   
 You can find the progress of the challenge and some other information.
@@ -81,33 +81,33 @@ It will be updated along the event.
 
 ### 🧮 General statistics
 
-| Statistic | Value |
-|------------|--------|
-| Estimated runtime | — |
-| Estimated runtime average | — |
-| Fastest day | — |
-| Slowest day | — |
+| Statistic                 | Value |
+|---------------------------|-------|
+| Estimated runtime         | —     |
+| Estimated runtime average | —     |
+| Fastest day               | —     |
+| Slowest day               | —     |
 
-*These informations will be completed at the end of Advent of Code*
+*These information will be completed at the end of Advent of Code*
 
 ---
 
 ### 🗓️ Daily table
 
-| Day | Part 1 | Time (ms) | Part 2 | Time (ms) | Comment |
-|------|----------|------------|----------|------------|-------------|
-| 01 | ❌ | — | ❌ | — | |
-| 02 | ❌ | — | ❌ | — | |
-| 03 | ❌ | — | ❌ | — | |
-| 04 | ❌ | — | ❌ | — | |
-| 05 | ❌ | — | ❌ | — | |
-| 06 | ❌ | — | ❌ | — | |
-| 07 | ❌ | — | ❌ | — | |
-| 08 | ❌ | — | ❌ | — | |
-| 09 | ❌ | — | ❌ | — | |
-| 10 | ❌ | — | ❌ | — | |
-| 11 | ❌ | — | ❌ | — | |
-| 12 | ❌ | — | ❌ | — | |
+| Day | Part 1 | Part 2 | Time (ms) | Comment |
+|------|---------|-----------|--------|------------|-------------|
+| 01 | ✔️ | ✔️ | 36 ms | First part was dead simple, second one too, but it blows my mind for many hours to find the solution |
+| 02 | ❌ | ❌ | — | |
+| 03 | ❌ | ❌ | — | |
+| 04 | ❌ | ❌ | — | |
+| 05 | ❌ | ❌ | — | |
+| 06 | ❌ | ❌ | — | |
+| 07 | ❌ | ❌ | — | |
+| 08 | ❌ | ❌ | — | |
+| 09 | ❌ | ❌ | — | |
+| 10 | ❌ | ❌ | — | |
+| 11 | ❌ | ❌ | — | |
+| 12 | ❌ | ❌ | — | |
 
 ## 🎯 Personal objectives
 
