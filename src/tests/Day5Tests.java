@@ -23,6 +23,15 @@ public class Day5Tests {
     }
 
     @Test
+    void testSetupRangeListGetEveryId() {
+        Range range = new Range("3-5");
+        Assertions.assertEquals(3, range.getAllId().size());
+        Assertions.assertEquals(3, range.getAllId().get(0));
+        Assertions.assertEquals(4, range.getAllId().get(1));
+        Assertions.assertEquals(5, range.getAllId().get(2));
+    }
+
+    @Test
     void testIngredientConstructor() {
         Ingredient ingredient = new Ingredient(5);
 

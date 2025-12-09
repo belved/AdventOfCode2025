@@ -1,5 +1,7 @@
 package model.Day5;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -23,5 +25,13 @@ public class Range {
 
     public long getEnd() {
         return end;
+    }
+
+    public List<Long> getAllId() {
+        List<Long> values = new ArrayList<>();
+        for(long i = start; i <= end; i++) {
+            values.add(i);
+        }
+        return  values;
     }
 }
