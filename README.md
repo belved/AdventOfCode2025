@@ -1,7 +1,7 @@
 # Advent of Code 2025
 ![AOC](https://img.shields.io/badge/Advent%20of%20Code-2025-darkgreen)
 
-![Progress](https://img.shields.io/badge/progress-4%2F24%20stars-lightgrey)
+![Progress](https://img.shields.io/badge/progress-6%2F24%20stars-lightgrey)
 
 ![Language](https://img.shields.io/badge/language-Java-red)
 
@@ -74,7 +74,7 @@ It is not possible to run a specific day, but if you need, you can run a specifi
 
 ## 📊 Progression
 
-![Progress](https://img.shields.io/badge/Progress-4%2F24-yellow?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-6%2F24-yellow?style=for-the-badge)
 
 Here is the progress for the Advent of Code 2025 !   
 You can find the progress of the challenge and some other information.
@@ -97,20 +97,20 @@ It will be updated along the event.
 
 ### 🗓️ Daily table
 
-| Day | Part 1 | Part 2 | Time (ms) | Comment |
-|------|---------|-----------|------------|-------------|
-| 01 | ✔️ | ✔️ | 36 ms | The first part was dead simple, the second one too, but it blew my mind for many hours to find the solution. |
-| 02 | ✔️ | ✔️ | 406 ms | The logic of the second part was the first one I had in mind when reading the first part, so it wasn't really difficult to find a solution for this one. I think part two could be much faster using some optimizations.|
-| 03 | ❌ | ❌ | — | |
-| 04 | ❌ | ❌ | — | |
-| 05 | ❌ | ❌ | — | |
-| 06 | ❌ | ❌ | — | |
-| 07 | ❌ | ❌ | — | |
-| 08 | ❌ | ❌ | — | |
-| 09 | ❌ | ❌ | — | |
-| 10 | ❌ | ❌ | — | |
-| 11 | ❌ | ❌ | — | |
-| 12 | ❌ | ❌ | — | |
+| Day | Part 1 | Part 2 | Time (ms) | Comment                                                                                                                                                                                                                  |
+|------|---------|-----------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 01 | ✔️ | ✔️ | 36 ms     | The first part was dead simple, the second one too, but it blew my mind for many hours to find the solution.                                                                                                             |
+| 02 | ✔️ | ✔️ | 406 ms    | The logic of the second part was the first one I had in mind when reading the first part, so it wasn't really difficult to find a solution for this one. I think part two could be much faster using some optimizations. |
+| 03 | ✔️ | ✔️ | 6 ms      | The second part was a nightmare to figure out how to proceed to find the logic for 12 batteries.                                                                                                                         |
+| 04 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
+| 05 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
+| 06 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
+| 07 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
+| 08 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
+| 09 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
+| 10 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
+| 11 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
+| 12 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
 
 ## 🎯 Personal objectives
 

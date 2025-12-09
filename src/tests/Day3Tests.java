@@ -62,4 +62,34 @@ public class Day3Tests {
         Assertions.assertEquals(7, bank.getBatteryList().get(13).getJoltage());
         Assertions.assertEquals(8, bank.getBatteryList().get(14).getJoltage());
     }
+
+    @Test
+    void testResultWithExampleValueWith2Battery() {
+        Bank bank = new Bank("987654321111111");
+        Assertions.assertEquals(98, bank.getMaxJoltageValue(2));
+        bank = new Bank("811111111111119");
+        Assertions.assertEquals(89, bank.getMaxJoltageValue(2));
+        bank = new Bank("234234234234278");
+        Assertions.assertEquals(78, bank.getMaxJoltageValue(2));
+        bank = new Bank("818181911112111");
+        Assertions.assertEquals(92, bank.getMaxJoltageValue(2));
+    }
+
+    @Test
+    void testResultWithExampleValueWith12Battery() {
+        Bank bank = new Bank("987654321111111");
+        Assertions.assertEquals(Long.parseLong("987654321111"), bank.getMaxJoltageValue(12));
+        bank = new Bank("811111111111119");
+        Assertions.assertEquals(Long.parseLong("811111111119"), bank.getMaxJoltageValue(12));
+        bank = new Bank("234234234234278");
+        Assertions.assertEquals(Long.parseLong("434234234278"), bank.getMaxJoltageValue(12));
+        bank = new Bank("818181911112111");
+        Assertions.assertEquals(Long.parseLong("888911112111"), bank.getMaxJoltageValue(12));
+    }
+
+    @Test
+    void exampleFoundOnReddit() {
+        Bank bank = new Bank("99999999993241");
+        Assertions.assertEquals(Long.parseLong("999999999941"), bank.getMaxJoltageValue(12));
+    }
 }
