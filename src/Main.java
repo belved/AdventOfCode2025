@@ -8,7 +8,8 @@ public class Main {
             Arrays.asList(
                     new Day1(),
                     new Day2(),
-                    new Day3()
+                    new Day3(),
+                    new Day4()
             )
     );
 
