@@ -26,7 +26,7 @@ public class Day5Tests {
     void testIngredientConstructor() {
         Ingredient ingredient = new Ingredient(5);
 
-        Assertions.assertEquals(5, ingredient.getId());
+        Assertions.assertEquals(5, ingredient.id());
     }
 
     @Test
