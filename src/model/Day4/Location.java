@@ -2,7 +2,7 @@ package model.Day4;
 
 public class Location {
 
-    private final boolean isPaperRoll;
+    private boolean isPaperRoll;
     private boolean isAccessible = false;
 
     public Location(String value) {
@@ -11,6 +11,10 @@ public class Location {
 
     public boolean isPaperRoll() {
         return isPaperRoll;
+    }
+
+    public void setIsPaperRoll(boolean value) {
+        this.isPaperRoll = value;
     }
 
     public void setAccessible(boolean accessible) {

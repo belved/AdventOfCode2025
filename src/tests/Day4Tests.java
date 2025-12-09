@@ -173,4 +173,20 @@ public class Day4Tests {
 
         Assertions.assertEquals(13, place.getNumberOfPaperRollAccessible());
     }
+
+    @Test
+    void testGetNumberOfPaperRollRemoved() {
+        PrintingPlace place = new PrintingPlace(List.of("..@@.@@@@.","@@@.@.@.@@", "@@@@@.@.@@", "@.@@@@..@.", "@@.@@@@.@@", ".@@@@@@@.@", ".@.@.@.@@@", "@.@@@.@@@@",".@@@@@@@@.","@.@.@@@.@."));
+
+        Assertions.assertEquals(13, place.getNumberOfPaperRollAccessible());
+        Assertions.assertEquals(12, place.getNumberOfPaperRollAccessible());
+        Assertions.assertEquals(7, place.getNumberOfPaperRollAccessible());
+        Assertions.assertEquals(5, place.getNumberOfPaperRollAccessible());
+        Assertions.assertEquals(2, place.getNumberOfPaperRollAccessible());
+        Assertions.assertEquals(1, place.getNumberOfPaperRollAccessible());
+        Assertions.assertEquals(1, place.getNumberOfPaperRollAccessible());
+        Assertions.assertEquals(1, place.getNumberOfPaperRollAccessible());
+        Assertions.assertEquals(1, place.getNumberOfPaperRollAccessible());
+        Assertions.assertEquals(0, place.getNumberOfPaperRollAccessible());
+    }
 }

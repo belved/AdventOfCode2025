@@ -18,7 +18,10 @@ public class PrintingPlace {
         int temp = 0;
         for (List<Location> locations : matrix) {
             for (Location location : locations) {
-                if (location.isAccessible()) temp++;
+                if (location.isAccessible()) {
+                    temp++;
+                    location.setIsPaperRoll(false);
+                }
             }
         }
         return temp;

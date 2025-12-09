@@ -14,6 +14,16 @@ public class Day4 implements IDay{
 
         PrintingPlace place = new PrintingPlace(data);
 
-        System.out.println("There is " + place.getNumberOfPaperRollAccessible() + " that can be accessed by the forklift");
+        int numberOfPaper = place.getNumberOfPaperRollAccessible();
+
+        System.out.println("There is " + numberOfPaper + " that can be accessed by the forklift");
+
+        int numberOfPaperRemoved;
+        do {
+            numberOfPaperRemoved = place.getNumberOfPaperRollAccessible();
+            numberOfPaper+= numberOfPaperRemoved;
+        }while (numberOfPaperRemoved != 0);
+
+        System.out.println("There is " + numberOfPaper + " removed by the forklift");
     }
 }
