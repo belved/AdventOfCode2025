@@ -3,6 +3,7 @@ package tests;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import util.FileReader;
+import util.MultipleStringList;
 
 import java.util.List;
 
@@ -30,5 +31,16 @@ public class FileReaderTest {
         String string = FileReader.readDataAsString("giftShopIdExample");
 
         Assertions.assertEquals("11-22,95-115,998-1012,1188511880-1188511890,222220-222224,1698522-1698528,446443-446449,38593856-38593862,565653-565659,824824821-824824827,2121212118-2121212124", string);
+    }
+
+    @Test
+    void testReadFileAsMultipleStringList() {
+        MultipleStringList mString = FileReader.readDataAsMultipleStringList("ingredient");
+
+        Assertions.assertEquals(4, mString.getFirstList().size());
+        Assertions.assertEquals("3-5", mString.getFirstList().getFirst());
+
+        Assertions.assertEquals(6, mString.getSecondList().size());
+        Assertions.assertEquals("1", mString.getSecondList().getFirst());
     }
 }
