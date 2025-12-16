@@ -7,7 +7,6 @@ public class ProblemSolver {
 
     List<Problem> problems = new ArrayList<>();
 
-
     public ProblemSolver(String v1, String v2, String v3, String v4, String o) {
         String[] data1 = v1.trim().replaceAll(" +", " ").split(" ");
         String[] data2 = v2.trim().replaceAll(" +", " ").split(" ");
@@ -19,6 +18,14 @@ public class ProblemSolver {
         }
     }
 
+    public ProblemSolver() {
+        problems = new ArrayList<>();
+    }
+
+    public void addNewProblem(Problem p) {
+        problems.add(p);
+    }
+
     public long computeProblems() {
         long value = 0;
         for(Problem problem: problems){
@@ -26,6 +33,7 @@ public class ProblemSolver {
         }
         return value;
     }
+
 
     public List<Problem> getProblems() {
         return problems;

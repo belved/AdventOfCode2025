@@ -8,7 +8,9 @@ public class Problem {
     public Problem(String[] values, String operator) {
         this.operator = operator;
         for(int i = 0; i < values.length; i++){
-            this.values[i] = Long.parseLong(values[i]);
+            if(values[i] != null){
+                this.values[i] = Long.parseLong(values[i]);
+            }
         }
     }
 
@@ -31,7 +33,7 @@ public class Problem {
     private long multiply() {
         long multiply = 1;
         for (long value : values) {
-            multiply *= value;
+            if(value != 0) multiply *= value;
         }
         return multiply;
     }

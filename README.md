@@ -1,7 +1,7 @@
 # Advent of Code 2025
 ![AOC](https://img.shields.io/badge/Advent%20of%20Code-2025-darkgreen)
 
-![Progress](https://img.shields.io/badge/progress-10%2F24%20stars-lightgrey)
+![Progress](https://img.shields.io/badge/progress-12%2F24%20stars-lightgrey)
 
 ![Language](https://img.shields.io/badge/language-Java-red)
 
@@ -74,7 +74,7 @@ It is not possible to run a specific day, but if you need, you can run a specifi
 
 ## 📊 Progression
 
-![Progress](https://img.shields.io/badge/Progress-10%2F24-yellow?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-12%2F24-yellow?style=for-the-badge)
 
 Here is the progress for the Advent of Code 2025 !   
 You can find the progress of the challenge and some other information.
@@ -99,12 +99,12 @@ It will be updated along the event.
 
 | Day | Part 1 | Part 2 | Time (ms) | Comment                                                                                                                                                                                                                  |
 |------|--------|-----------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 01 | ✔️ | ✔️ | 36 ms     | The first part was dead simple, the second one too, but it blew my mind for no reasons for many hours to find the solution.                                                                                                             |
+| 01 | ✔️ | ✔️ | 36 ms     | The first part was dead simple, the second one too, but it blew my mind for no reasons for many hours to find the solution.                                                                                              |
 | 02 | ✔️ | ✔️ | 406 ms    | The logic of the second part was the first one I had in mind when reading the first part, so it wasn't really difficult to find a solution for this one. I think part two could be much faster using some optimizations. |
 | 03 | ✔️ | ✔️ | 6 ms      | The second part was a nightmare to figure out how to proceed to find the logic for 12 batteries.                                                                                                                         |
 | 04 | ✔️ | ✔️ | 172 ms    | Pretty proud of the solution choose for the first part because the second one was dead simple to adapt with this approach                                                                                                |
-| 05 | ✔️ | ✔️ | 4 ms      | Pretty happy with the solution found. Second part ask me to readapt my code but it was not that hard to adapt.                                                                                                                                                                                                                         |
-| 06 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
+| 05 | ✔️ | ✔️ | 4 ms      | Pretty happy with the solution found. Second part ask me to readapt my code but it was not that hard to adapt.                                                                                                           |
+| 06 | ✔️ | ✔️ | 7 ms      | Seems to be redudent this year, first part was very simple but it was really dificult to find a way to use what was done for the first part to the second part.                                                          |
 | 07 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
 | 08 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
 | 09 | ❌ | ❌ | —         |                                                                                                                                                                                                                          |
