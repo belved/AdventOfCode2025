@@ -40,7 +40,7 @@ public class Day5Tests {
     }
 
     @Test
-    void testIngredientIsfresh() {
+    void testIngredientIsFresh() {
         Ingredient ingredient = new Ingredient(5);
 
         Assertions.assertTrue(ingredient.isFresh(5, 10));
@@ -87,9 +87,11 @@ public class Day5Tests {
         }
     }
 
+    private final List<Range> ranges = new ArrayList<>();
+
     @Test
     void testRangeOrganizerSort() {
-        List<Range> ranges = new ArrayList<>();
+        ranges.clear();
         ranges.add(new Range("3-5"));
         ranges.add(new Range("10-14"));
         ranges.add(new Range("16-20"));
@@ -99,16 +101,16 @@ public class Day5Tests {
 
         rangeOrganizer.sortRanges();
 
-        Assertions.assertEquals(4, rangeOrganizer.getRanges().size());
-        Assertions.assertEquals(3, rangeOrganizer.getRanges().get(0).getStart());
-        Assertions.assertEquals(10, rangeOrganizer.getRanges().get(1).getStart());
-        Assertions.assertEquals(12, rangeOrganizer.getRanges().get(2).getStart());
-        Assertions.assertEquals(16, rangeOrganizer.getRanges().get(3).getStart());
+        Assertions.assertEquals(4, rangeOrganizer.ranges().size());
+        Assertions.assertEquals(3, rangeOrganizer.ranges().get(0).getStart());
+        Assertions.assertEquals(10, rangeOrganizer.ranges().get(1).getStart());
+        Assertions.assertEquals(12, rangeOrganizer.ranges().get(2).getStart());
+        Assertions.assertEquals(16, rangeOrganizer.ranges().get(3).getStart());
     }
 
     @Test
     void testRangeMerging() {
-        List<Range> ranges = new ArrayList<>();
+        ranges.clear();
         ranges.add(new Range("3-5"));
         ranges.add(new Range("10-14"));
         ranges.add(new Range("16-20"));
@@ -118,16 +120,16 @@ public class Day5Tests {
 
         rangeOrganizer.mergeRange();
 
-        Assertions.assertEquals(2, rangeOrganizer.getRanges().size());
-        Assertions.assertEquals(3, rangeOrganizer.getRanges().get(0).getStart());
-        Assertions.assertEquals(5, rangeOrganizer.getRanges().get(0).getEnd());
-        Assertions.assertEquals(10, rangeOrganizer.getRanges().get(1).getStart());
-        Assertions.assertEquals(20, rangeOrganizer.getRanges().get(1).getEnd());
+        Assertions.assertEquals(2, rangeOrganizer.ranges().size());
+        Assertions.assertEquals(3, rangeOrganizer.ranges().get(0).getStart());
+        Assertions.assertEquals(5, rangeOrganizer.ranges().get(0).getEnd());
+        Assertions.assertEquals(10, rangeOrganizer.ranges().get(1).getStart());
+        Assertions.assertEquals(20, rangeOrganizer.ranges().get(1).getEnd());
     }
 
     @Test
     void testRangeMergingWithInnerRange() {
-        List<Range> ranges = new ArrayList<>();
+        ranges.clear();
         ranges.add(new Range("10-14"));
         ranges.add(new Range("13-20"));
         ranges.add(new Range("16-19"));
@@ -136,9 +138,9 @@ public class Day5Tests {
 
         rangeOrganizer.mergeRange();
 
-        Assertions.assertEquals(1, rangeOrganizer.getRanges().size());
-        Assertions.assertEquals(10, rangeOrganizer.getRanges().getFirst().getStart());
-        Assertions.assertEquals(20, rangeOrganizer.getRanges().getFirst().getEnd());
+        Assertions.assertEquals(1, rangeOrganizer.ranges().size());
+        Assertions.assertEquals(10, rangeOrganizer.ranges().getFirst().getStart());
+        Assertions.assertEquals(20, rangeOrganizer.ranges().getFirst().getEnd());
     }
 
     @Test

@@ -3,7 +3,7 @@ package tests;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class jUnitExampleTestCase {
+public class JUnitExampleTestCase {
 
     @Test
     void testAddition() {

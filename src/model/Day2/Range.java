@@ -35,7 +35,7 @@ public class Range {
         long sum = 0;
         for(Id id : idRange) {
             if(!id.isValidFromHalf()) {
-                sum += Long.parseLong(id.getValue());
+                sum += Long.parseLong(id.value());
             }
         }
         return sum;
@@ -45,7 +45,7 @@ public class Range {
         long sum = 0;
         for(Id id : idRange) {
             if(!id.isValidFromEverywhere()) {
-                sum += Long.parseLong(id.getValue());
+                sum += Long.parseLong(id.value());
             }
         }
         return sum;

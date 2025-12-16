@@ -65,13 +65,13 @@ public class Day2Tests {
     @Test
     void testSetupRangeListFirstValue() {
         Range range = new Range("11-22");
-        Assertions.assertEquals("11", range.getIdRange().getFirst().getValue());
+        Assertions.assertEquals("11", range.getIdRange().getFirst().value());
     }
 
     @Test
     void testSetupRangeListLastValue() {
         Range range = new Range("11-22");
-        Assertions.assertEquals("22", range.getIdRange().getLast().getValue());
+        Assertions.assertEquals("22", range.getIdRange().getLast().value());
     }
 
     @Test
@@ -87,7 +87,7 @@ public class Day2Tests {
     }
 
     @Test
-    void testgetSumOfInvalidIdFromHalf() {
+    void testGetSumOfInvalidIdFromHalf() {
         Range range = new Range("11-22");
         Assertions.assertEquals(33, range.getSumOfInvalidIdFromHalf());
     }
@@ -186,7 +186,7 @@ public class Day2Tests {
     }
 
     @Test
-    void testgetSumOfInvalidIdFromHalfFromEverywhere() {
+    void testGetSumOfInvalidIdFromHalfFromEverywhere() {
         Range range = new Range("11-22");
         Assertions.assertEquals(33, range.getSumOfInvalidIdFromEverywhere());
     }
