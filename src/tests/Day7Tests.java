@@ -6,13 +6,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class Day7Tests {
 
     private List<String> data;
+    private List<String> data2;
     
     @BeforeEach
     public void setup() {
@@ -34,6 +33,25 @@ public class Day7Tests {
         data.add("...............");
         data.add(".^.^.^.^.^...^.");
         data.add("...............");
+
+        data2 = new ArrayList<>();
+
+        data2.add(".......S.......");
+        data2.add("...............");
+        data2.add(".......^.......");
+        data2.add("...............");
+        data2.add("...............");
+        data2.add("...............");
+        data2.add("...............");
+        data2.add("...............");
+        data2.add("...............");
+        data2.add("...............");
+        data2.add("...............");
+        data2.add("...............");
+        data2.add("...............");
+        data2.add("...............");
+        data2.add("...............");
+        data2.add("...............");
     }
     
     @Test
@@ -128,24 +146,6 @@ public class Day7Tests {
 
     @Test
     void testGetCountAfterNavigateThrough() {
-        data = new ArrayList<>();
-
-        data.add(".......S.......");
-        data.add("...............");
-        data.add(".......^.......");
-        data.add("...............");
-        data.add("......^.^......");
-        data.add("...............");
-        data.add(".....^.^.^.....");
-        data.add("...............");
-        data.add("....^.^...^....");
-        data.add("...............");
-        data.add("...^.^...^.^...");
-        data.add("...............");
-        data.add("..^...^.....^..");
-        data.add("...............");
-        data.add(".^.^.^.^.^...^.");
-        data.add("...............");
         
         TachyonDiagram tachyonDiagram = new TachyonDiagram(data);
 
@@ -180,7 +180,7 @@ public class Day7Tests {
         TachyonDiagram tachyonDiagram = new TachyonDiagram(data);
         Beam beam = new Beam("0000000", tachyonDiagram.getGrid(), tachyonDiagram.getStart());
 
-        beam.navigateThrough();
+        beam.navigateThroughWithNoRecursion();
         
         Assertions.assertEquals("lllllll", beam.getPath());
     }
@@ -190,13 +190,13 @@ public class Day7Tests {
         TachyonDiagram tachyonDiagram = new TachyonDiagram(data);
         Beam beam = new Beam("0000001", tachyonDiagram.getGrid(), tachyonDiagram.getStart());
 
-        beam.navigateThrough();
+        beam.navigateThroughWithNoRecursion();
 
         Assertions.assertEquals("rllll", beam.getPath());
         
         beam = new Beam("0010000", tachyonDiagram.getGrid(), tachyonDiagram.getStart());
 
-        beam.navigateThrough();
+        beam.navigateThroughWithNoRecursion();
 
         Assertions.assertEquals("llllr", beam.getPath());
     }
@@ -208,8 +208,8 @@ public class Day7Tests {
         Beam beam1 = new Beam("0000000", tachyonDiagram.getGrid(), tachyonDiagram.getStart());
         Beam beam2 = new Beam("0000000", tachyonDiagram.getGrid(), tachyonDiagram.getStart());
         
-        beam1.navigateThrough();
-        beam2.navigateThrough();
+        beam1.navigateThroughWithNoRecursion();
+        beam2.navigateThroughWithNoRecursion();
 
         Assertions.assertEquals(beam1, beam2);
     }
@@ -221,8 +221,8 @@ public class Day7Tests {
         Beam beam1 = new Beam("0000000", tachyonDiagram.getGrid(), tachyonDiagram.getStart());
         Beam beam2 = new Beam("0000001", tachyonDiagram.getGrid(), tachyonDiagram.getStart());
 
-        beam1.navigateThrough();
-        beam2.navigateThrough();
+        beam1.navigateThroughWithNoRecursion();
+        beam2.navigateThroughWithNoRecursion();
 
         Assertions.assertNotEquals(beam1, beam2);
     }
@@ -240,13 +240,13 @@ public class Day7Tests {
         beams.add(beam1);
         beams.add(beam2);
         
-        beam1.navigateThrough();
-        beam2.navigateThrough();
+        beam1.navigateThroughWithNoRecursion();
+        beam2.navigateThroughWithNoRecursion();
 
         Assertions.assertEquals(1, beams.size());
 
         beams.add(beam3);
-        beam3.navigateThrough();
+        beam3.navigateThroughWithNoRecursion();
         
         Assertions.assertEquals(2, beams.size());
     }
@@ -263,8 +263,8 @@ public class Day7Tests {
         beams.add(beam1);
         beams.add(beam2);
 
-        beam1.navigateThrough();
-        beam2.navigateThrough();
+        beam1.navigateThroughWithNoRecursion();
+        beam2.navigateThroughWithNoRecursion();
         
         HashSet<Beam> beams2 = new HashSet<>();
         beams2.add(beam1);
@@ -285,22 +285,13 @@ public class Day7Tests {
         beams.add(beam1);
         beams.add(beam2);
 
-        beam1.navigateThrough();
-        beam2.navigateThrough();
+        beam1.navigateThroughWithNoRecursion();
+        beam2.navigateThroughWithNoRecursion();
 
         HashSet<Beam> beams2 = new HashSet<>();
         beams2.add(beam1);
         beams2.add(beam2);
 
         Assertions.assertEquals(1, beams2.size());
-    }
-
-    @Test
-    void testQuantumPathCount() {
-        TachyonDiagram tachyonDiagram = new TachyonDiagram(data);
-        
-        tachyonDiagram.computeQuantumPath();
-
-        Assertions.assertEquals(40, tachyonDiagram.getQuantumPathCount());
     }
 }

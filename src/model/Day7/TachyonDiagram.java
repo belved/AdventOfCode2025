@@ -1,7 +1,6 @@
 package model.Day7;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 public class TachyonDiagram {
@@ -62,27 +61,6 @@ public class TachyonDiagram {
                 }
             }
         }
-    }
-    
-    private final List<Beam> beams = new ArrayList<>();
-    
-    public void computeQuantumPath() {
-        
-        int length = (grid.size()/2)-1;
-        
-        for(int i = 0; i < Math.pow(2, length); i++) {
-            String seed = String.format("%"+length+"s", Integer.toBinaryString(i)).replace(' ', '0');
-            beams.add(new Beam(seed, getGrid(), getStart()));
-        }
-        
-        for(Beam beam : beams) {
-            beam.navigateThrough();
-        }
-    }
-    
-    public int getQuantumPathCount() {
-        HashSet<Beam> temp = new HashSet<>(beams);
-        return temp.size();
     }
     
     public int getCount() {

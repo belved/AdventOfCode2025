@@ -37,6 +37,8 @@ public class Beam {
         return seed.charAt(seed.length() - path.length()-1) == '0';
     }
 
+    //TODO Consider memoization and maybe recursion ? 
+    //TODO Maybe a good idea to keep position of the beam to avoid checking all the line (to combine with recursion)
     public void updatePath(int i, int j) {
         if(grid.get(i).get(j) == '^') {
             if(shouldGoLeft()) {
@@ -50,14 +52,28 @@ public class Beam {
             grid.get(i).set(j, '|');
         }
     }
+    
+    public void updatePathWithNoRecursion(int i, int j) {
+        if(grid.get(i).get(j) == '^') {
+            if(shouldGoLeft()) {
+                grid.get(i).set(j-1, '|');
+                path += "l";
+            } else {
+                grid.get(i).set(j+1, '|');
+                path += "r";
+            }
+        } else {
+            grid.get(i).set(j, '|');
+        }
+    }
 
-    public void navigateThrough() {
-        updatePath(1, start);
+    public void navigateThroughWithNoRecursion() {
+        updatePathWithNoRecursion(1, start);
 
         for(int i = 1; i < grid.size(); i++) {
             for(int j = 0; j < grid.get(i).size(); j++) {
                 if(grid.get(i-1).get(j) == '|') {
-                    updatePath(i, j);
+                    updatePathWithNoRecursion(i, j);
                     j = grid.get(i).size();
                 }
             }
