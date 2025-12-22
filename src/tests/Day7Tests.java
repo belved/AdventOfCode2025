@@ -1,6 +1,7 @@
 package tests;
 
 import model.Day7.Beam;
+import model.Day7.QuantumTachyonDiagram;
 import model.Day7.TachyonDiagram;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -293,5 +294,19 @@ public class Day7Tests {
         beams2.add(beam2);
 
         Assertions.assertEquals(1, beams2.size());
+    }
+    
+    @Test
+    void testComputeQuantumPathCount() {
+        QuantumTachyonDiagram tachyonDiagram = new QuantumTachyonDiagram(data2);
+        
+        Assertions.assertEquals(2, tachyonDiagram.getPathCount(0,7));
+    }
+
+    @Test
+    void testComputeQuantumPathCountWithRealData() {
+        QuantumTachyonDiagram tachyonDiagram = new QuantumTachyonDiagram(data);
+
+        Assertions.assertEquals(40, tachyonDiagram.getPathCount(0,7));
     }
 }
