@@ -36,9 +36,7 @@ public class Beam {
     public boolean shouldGoLeft() {
         return seed.charAt(seed.length() - path.length()-1) == '0';
     }
-
-    //TODO Consider memoization and maybe recursion ? 
-    //TODO Maybe a good idea to keep position of the beam to avoid checking all the line (to combine with recursion)
+    
     public void updatePath(int i, int j) {
         if(grid.get(i).get(j) == '^') {
             if(shouldGoLeft()) {
