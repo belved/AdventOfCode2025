@@ -1,7 +1,7 @@
 # Advent of Code 2025
 ![AOC](https://img.shields.io/badge/Advent%20of%20Code-2025-darkgreen)
 
-![Progress](https://img.shields.io/badge/progress-12%2F24%20stars-lightgrey)
+![Progress](https://img.shields.io/badge/progress-14%2F24%20stars-lightgrey)
 
 ![Language](https://img.shields.io/badge/language-Java-red)
 
@@ -74,7 +74,7 @@ It is not possible to run a specific day, but if you need, you can run a specifi
 
 ## 📊 Progression
 
-![Progress](https://img.shields.io/badge/Progress-12%2F24-yellow?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-14%2F24-yellow?style=for-the-badge)
 
 Here is the progress for the Advent of Code 2025 !   
 You can find the progress of the challenge and some other information.
