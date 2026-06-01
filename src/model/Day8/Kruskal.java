@@ -1,6 +1,8 @@
 package model.Day8;
 
+import java.awt.*;
 import java.util.*;
+import java.util.List;
 
 public class Kruskal {
     
@@ -35,6 +37,29 @@ public class Kruskal {
         mst.sort(Collections.reverseOrder());
         
         return mst.get(0) * mst.get(1) * mst.get(2);
+    }
+
+    public int computeLastKruskal() {
+        sortEdges();
+
+        UnionFind uf = new UnionFind(points.size());
+
+        for(Edge e : edges){
+            int first =  uf.find(e.getI());
+            int second =  uf.find(e.getJ());
+            
+            if(first != second){
+                uf.union(first, second);
+                
+                if(uf.getSize(uf.find(0)) == points.size()) {
+                    Point3D p1 = points.get(e.getI());
+                    Point3D p2 = points.get(e.getJ());
+                    return p1.getPosition()[0] * p2.getPosition()[0];
+                }
+            }
+        }
+        
+        return -1;
     }
     
     public List<Integer> getMst(){

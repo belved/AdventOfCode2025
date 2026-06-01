@@ -7,20 +7,20 @@ public class UnionFind {
     int[] parent;
     int[] size;
 
-    UnionFind(int n) {
+    public UnionFind(int n) {
         parent = IntStream.range(0, n).toArray();
         size = new int[n];
         Arrays.fill(size, 1);
     }
 
-    int find(int x) {
+    public int find(int x) {
         if (parent[x] != x) {
             parent[x] = find(parent[x]);
         }
         return parent[x];
     }
 
-    void union(int x, int y) {
+    public void union(int x, int y) {
         int rootX = find(x);
         int rootY = find(y);
         if (rootX != rootY) {
@@ -34,7 +34,7 @@ public class UnionFind {
         }
     }
 
-    int getSize(int x) {
+    public int getSize(int x) {
         return size[x];
     }
 }

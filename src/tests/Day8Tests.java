@@ -113,4 +113,13 @@ public class Day8Tests {
         
         Assertions.assertEquals(40, i);
     }
+    
+    @Test
+    void testLastPointKruskal() {
+        Kruskal k = new Kruskal(list);
+        
+        int i = k.computeLastKruskal();
+        
+        Assertions.assertEquals(25272, i);
+    }
 }

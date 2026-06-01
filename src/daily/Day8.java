@@ -18,5 +18,11 @@ public class Day8 implements IDay{
 
         System.out.println("The result computed for the last three junction box after 1000 connexions is " + result);
         
+        kruskal = new Kruskal(data);
+        
+        result = kruskal.computeLastKruskal();
+
+        System.out.println("The result of the last two connexions is " + result);
+        
     }
 }
